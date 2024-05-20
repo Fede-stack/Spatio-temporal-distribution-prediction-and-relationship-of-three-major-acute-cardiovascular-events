@@ -264,7 +264,10 @@ stack = StackingRegressor(
 stack.fit(X_train, y_train)
 preds_fin = stack.predict(X_test) # Final Predictions
 
-def show_bars():
+def show_bars(base_naive, mae_naive, mse_naive, 
+             baise_ema, mae_ema, mse_ema, 
+             inla_chisq, mae_inla, mse_inla, 
+             ml_chisq, mae_ml, mse_ml):
     models = ['Chisq', 'MAE', 'MSE']
     bar_width = 1
     index = np.arange(4)
