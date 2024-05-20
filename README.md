@@ -1,6 +1,6 @@
 # Spatio-temporal-distribution-prediction-and-relationship-of-three-major-acute-cardiovascular-events
 
-This is the repository for the analyses of the paper: *"Spatio-temporal distribution, prediction and relationship of three major acute cardiovascular events: out-of-hospital cardiac arrest, ST-elevation myocardial infarction and stroke"*.
+This is the repository of the paper: *"Spatio-temporal distribution, prediction and relationship of three major acute cardiovascular events: out-of-hospital cardiac arrest, ST-elevation myocardial infarction and stroke"*.
 
 The models are implemented in the `models/` directory and contain the files to reproduce the analyses presented in the paper.
 
