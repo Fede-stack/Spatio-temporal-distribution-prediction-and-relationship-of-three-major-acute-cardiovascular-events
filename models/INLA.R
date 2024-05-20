@@ -14,9 +14,8 @@ library(viridis)
 
 # Loading Data ------------------------------------------------------------
 
-setwd('/Users/federico.ravenda/Documents/PROGETTO OHCA/data/ohca') # set the directory
-data = readRDS("PAPER_ohca_stroke_stemi/stroke_paper_data.rds") %>%
-  filter(Year < 2022)# dataset with covariates and response already cleaned
+data = readRDS("stroke.rds") %>%
+  filter(Year < 2022) # dataset with covariates and response already cleaned
 x = sf::read_sf("limiti_comuni_2017_MN95.shp") # shape file in which Ticino geographical information are synthesized
 municipalities = x$NOME_COMUN
 n.mun = length(municipalities)
