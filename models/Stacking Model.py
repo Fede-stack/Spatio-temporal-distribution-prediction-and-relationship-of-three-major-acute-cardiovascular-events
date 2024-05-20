@@ -177,7 +177,7 @@ rf_bo = BayesianOptimization(
      'min_samples_split': (2, 10),
      'max_features': (0.1, 0.999)}
 )
-rf_bo.maximize(init_points=10, n_iter=40)
+rf_bo.maximize(init_points=10, n_iter=25)
 
 #Gradient Boosting
 gb_bo = BayesianOptimization(
@@ -186,7 +186,7 @@ gb_bo = BayesianOptimization(
      'learning_rate': (0.01, 1),
      'max_depth': (1, 10)}
 )
-gb_bo.maximize(init_points=10, n_iter=40)
+gb_bo.maximize(init_points=10, n_iter=25)
 
 #XGBoost
 xgb_bo = BayesianOptimization(
@@ -197,7 +197,7 @@ xgb_bo = BayesianOptimization(
      'gamma': (0, 5),
      'colsample_bytree': (0.1, 0.999)}
 )
-xgb_bo.maximize(init_points=10, n_iter=40)
+xgb_bo.maximize(init_points=10, n_iter=25)
 
 #MLP
 mlp_bo = BayesianOptimization(
@@ -206,7 +206,7 @@ mlp_bo = BayesianOptimization(
      'alpha': (1e-5, 1e-1),
      'learning_rate_init': (1e-5, 1e-1)}
 )
-mlp_bo.maximize(init_points=10, n_iter=40)
+mlp_bo.maximize(init_points=10, n_iter=25)
 
 #Best Hyperparams
 rf_best_params = rf_bo.max['params']
