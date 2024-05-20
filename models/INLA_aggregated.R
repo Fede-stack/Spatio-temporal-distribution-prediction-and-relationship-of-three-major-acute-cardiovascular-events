@@ -14,8 +14,8 @@ library(viridis)
 
 # Loading Data ------------------------------------------------------------
 
-setwd('/Users/federico.ravenda/Documents/PROGETTO OHCA/data/ohca') # set the directory
-data = readRDS("PAPER_ohca_stroke_stemi/sim_paper_ohca.rds") # dataset with covariates and response already cleaned
+file_path = '' 
+data = readRDS(file_path) # dataset with covariates and response already cleaned
 data = data %>%
   filter(Year > 2014) %>%
   filter(Year < 2020)
@@ -42,8 +42,10 @@ inla_data = data %>%
 inla_data = as.data.frame(inla_data)
 
 # Import Stemi and Stroke data
-stemi_data = readRDS("/Users/federico.ravenda/Documents/PROGETTO OHCA/data/ohca/PAPER_ohca_stroke_stemi/stemi_paper_data.rds") # dataset with covariates and response already cleaned
-stroke_data = readRDS("/Users/federico.ravenda/Documents/PROGETTO OHCA/data/ohca/PAPER_ohca_stroke_stemi/stroke_paper_data.rds")
+file_path2 = ''
+file_path3 = ''
+stemi_data = readRDS(file_path2)
+stroke_data = readRDS(file_path3)
 
 stemi_data = stemi_data %>%
   dplyr::select(Year, stemi, Municipality) %>%
