@@ -9,5 +9,9 @@ The models are implemented in the `models/` directory and contain the files to r
 - `Stacking_model.py` contains the code for the analysis of the three historical series using an ensemble model based on Machine Learning models.
 
 <img src="https://github.com/Fede-stack/Spatio-temporal-distribution-prediction-and-relationship-of-three-major-acute-cardiovascular-events/blob/main/images/StackingModel.jpg" alt="" width="800">
+
 **Figure 1. A representation of the MLMM model.**
 
+<img src="https://github.com/Fede-stack/Spatio-temporal-distribution-prediction-and-relationship-of-three-major-acute-cardiovascular-events/blob/main/images/maps.png" alt="" width="800">
+
+**Figure 2. Predicted risk map of Ticino for out-of-hospital cardiac arrest (OHCA), ST-elevation myocardial infarction (STEMI), stroke, and OHCA supported by past STEMIs and strokes.**
