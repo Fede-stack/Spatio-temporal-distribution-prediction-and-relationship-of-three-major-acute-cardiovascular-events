@@ -129,7 +129,6 @@ upperb     = round(inla_data$Pop[to.pred]*model.inla$summary.fitted.values$`0.97
 real_pred = data.frame(real_values = tail(real.values, n.mun*interval), denominazione_regione = tail(inla_data$Municipality,  n.mun*interval))
 real_pred['pred'] = prediction; real_pred['lowerb'] = lowerb; real_pred['upperbb'] = upperb
 
-# focus
 prediction = round(inla_data$Pop*model.inla$summary.fitted.values$mean) #interpolation + extrapolation
 lowerb = round(inla_data$Pop*model.inla$summary.fitted.values$`0.025quant`)
 upperb = round(inla_data$Pop*model.inla$summary.fitted.values$`0.975quant`)
