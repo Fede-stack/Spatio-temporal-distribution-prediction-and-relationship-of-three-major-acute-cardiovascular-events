@@ -4,9 +4,9 @@ This is the repository of the paper: *"Spatio-temporal distribution, prediction 
 
 The models are implemented in the `models/` directory and contain the files to reproduce the analyses presented in the paper.
 
-- `INLA_univariate.R` contains the code for the univariate analysis of the three different series considered: OHCA, STEMI, and stroke.
-- `INLA_aggregated.R` contains the code for the joint analysis of the three series.
-- `Stacking_model.py` contains the code for the analysis of the three historical series using an ensemble model based on Machine Learning models.
+- `INLA_univariate.R` contains the code for the univariate analysis of the three different time-series considered: OHCA, STEMI, and stroke.
+- `INLA_aggregated.R` contains the code for the joint analysis of the three time-series.
+- `Stacking_model.py` contains the code for the analysis of the three historical time-series using an ensemble model based on different Machine Learning models.
 
 <img src="https://github.com/Fede-stack/Spatio-temporal-distribution-prediction-and-relationship-of-three-major-acute-cardiovascular-events/blob/main/images/StackingModel.jpg" alt="" width="500">
 
