@@ -8,7 +8,7 @@ The models are implemented in the `models/` directory and contain the files to r
 - `INLA_aggregated.R` contains the code for the joint analysis of the three time-series.
 - `Stacking_model.py` contains the code for the analysis of the three historical time-series using an ensemble model based on different Machine Learning models.
 
-<img src="https://github.com/Fede-stack/Spatio-temporal-distribution-prediction-and-relationship-of-three-major-acute-cardiovascular-events/blob/main/images/StackingModel.jpg" alt="" width="500">
+<img src="https://github.com/Fede-stack/Spatio-temporal-distribution-prediction-and-relationship-of-three-major-acute-cardiovascular-events/blob/main/images/MLMM.png" alt="" width="500">
 
 **Figure 1. A representation of the MLMM model.**
 
